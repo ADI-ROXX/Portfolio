@@ -9,15 +9,15 @@ const Ball = ({icon}) => {
   return (
     <Float speed={5.5} rotationIntensity={2} floatIntensity={4} >
       <ambientLight intensity={0.25} />
-      <directionalLight position={[0,0,0.5]} intensity={1}/>
+      <directionalLight position={[0,0,0.5]} intensity={0.6}/>
 
 
-      <mesh castShadow={true} receiveShadow scale={1.3}>
+
+      <mesh castShadow={false}  scale={1.3}>
         <icosahedronGeometry args={[1,3]} />
         <meshStandardMaterial 
           color="#edf1e6"
-          polygonOffset
-          polygonOffsetFactor={1.5}
+
           flatShading/>
         <Decal 
           position={[0,0,1]}
