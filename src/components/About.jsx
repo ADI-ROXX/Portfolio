@@ -16,19 +16,9 @@ const ServiceCard=({title,icon,index})=>{
         variants={fadeIn("right","tween",0.5*index,1)}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true,amount:0.25}}
+        viewport={{once: true}}
         className='border-green-200 card_grad border-[2px] min-w-[250px] rounded-lg min-h-[320px] flex flex-col items-center justify-center '>
-          <div
-            options={{
-              max:45,
-              scale:1,
-              speed:450,
-              reverse:true,
-
-            }
-          }
-            className="flex flex-col  justify-center  items-center gap-4 px-2 "
-          >
+          <div className="flex flex-col  justify-center  items-center gap-4 px-2 ">
               <img src={icon} alt="icon" className="w-16 h-16 object-contain"/>
               <div className='flex items-center justify-center'>
                 <div className="text-[20px] font-bold mx-auto text-center">{title}</div>
@@ -48,7 +38,12 @@ const About = () => {
     </motion.div> 
     <motion.p 
       variants={fadeIn("left","spring",0.4,1)} className='mt-[1vh] max-w-3xl pr-[4vh] leading-[4vh]'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, temporibus accusamus at earum nostrum vitae similique suscipit tempore aut, error in ratione aperiam? Maiores saepe quod ullam sed illo. Nemo! Lorem ipsum dolor sit am rem, consectetur adipiscing elit sed diam non pro id elit. Lorem ips   nostrum, consectetur adipiscing elit, sed diam non pro id elit. Lorem ips nost    nostrum, consectetur adipiscing elit, sed diam non    pro id elit. Lorem ips nostrum, consectetur   adipiscing elit, sed diam non pro id elit. Lorem    convallis   justo. Lorem ips nostrum, consectetur adipis    grouping, sed diam non pro id elit. Lorem ips nostrum        
+        <img src='/check-mark.png' width="3"/>I am Aditya Ruhela. I am a web developer and a coder, equipped with the skills of HTML,CSS,JS for web development
+        and C++ for solving DSA problems.<br/> My skills are not limited to basic web development only. I have worked with modern Web Development technologies like Tailwind CSS and MUI and JavaScript frameworks like ReactJS.
+        <br/>
+        I have worked with 3D website rendering technology of ReactThreeFiber and have a pretty good understanding of how the things work in it.
+        <br/>
+        
     </motion.p>
     
     <div className="flex flex-wrap justify-evenly gap-10 mt-20 pr-[5vw]">

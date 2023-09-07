@@ -1,30 +1,32 @@
 import React, { useState } from 'react'
-import { EarthCanvas } from './canvas'
+
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn,textVariant } from '../utils/motion'
+
 import "./contact.css";
+
 import {WrapSection} from "../hoc"
 import emailValidator from "email-validator";
 import emailjs from "@emailjs/browser"
+
 const initialMail={
   name:'',
   email:'',
   text:''
 }
 
-//8lkb_EgjuWjZdKA0C
-//template_411lsxe
-//service_udmlsry
+
 const Contact = () => {
   const [mail, setMail] = useState(initialMail);
+
   const serviceId="service_udmlsry";
   const templateId="template_411lsxe";
   const publicKey="8lkb_EgjuWjZdKA0C";
 
-  const submitHandler=async (e)=>{
+  const submitHandler=async ()=>{
 
-    e.preventDefault();
+
 
 
     try {

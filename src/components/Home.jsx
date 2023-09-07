@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {motion} from "framer-motion"
 
 import {styles} from "../styles.js"
-import {ComputersCanvas} from "./canvas"
+import {ComputersCanvas} from "./canvas/index.js"
 import { Link } from 'react-router-dom'
-const Hero = () => {
+import { useFrame } from '@react-three/fiber'
+const Home = () => {
+  const setup=useRef();
+
+ 
+
   return (
     <div id="">
       
@@ -18,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col gap-0">
         <p className={`${styles.heroHeadText} steelfish `}>Hi, I'm <span className="back-img">Aditya</span></p>
-        <p className={`${styles.heroSubText} w-[60%]`}>I develop attractive websites, and I can work on both frontend and backend  </p>
+        <p className={`${styles.heroSubText} w-[60%]`}>I create attractive websites and have worked on both frontend and backend</p>
         </div>
         </div>
         <div className="z-0 absolute  w-full h-screen ">
@@ -26,15 +31,17 @@ const Hero = () => {
 
         <a href='#about'>
           <div className='absolute bottom-[2.5%] z-10 border-4 left-[50%] h-[48px] w-[30px] pl-[5px]  border-md rounded-[32px] border-secondary'> 
-              <motion.div
+              <motion.div ref={setup}
                 animate={{
-                  y:[0,24,0]
+                  y:[0,20,0],
+
                 }}
                 transition={
                   {
                     duration:0.9,
                     repeat:Infinity,
                     repeatType:'loop',
+
                   }
                 }
                 className="w-3 h-3  mt-1 mb-0.5 rounded-full bg-secondary ">
@@ -51,7 +58,7 @@ const Hero = () => {
 }
 
 
-export default Hero
+export default Home
 
 
 

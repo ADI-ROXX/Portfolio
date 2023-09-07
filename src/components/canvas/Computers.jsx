@@ -5,24 +5,7 @@ import CanvasLoader from "../Loader"
 
 const Computers = () => {
   const computer = useGLTF("./gaming_pc/scene.gltf");
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(()=>{
-    const mediaQuery=window.matchMedia('(max-width:500px)');
-
-      setIsMobile(mediaQuery.matches);
-
-
-
-    const mediaQueryChangeHandler=(event)=>{
-      setIsMobile(event.matches);
-    }
-
-    mediaQuery.addEventListener('change',mediaQueryChangeHandler);
-    return ()=>{
-    mediaQuery.removeEventListener('change',mediaQueryChangeHandler);
-    }
-  })
+  
 
   return (
     <mesh>
@@ -52,8 +35,8 @@ const Computers = () => {
       <primitive
         object={computer.scene}
         rotation={[0.0, 30, -0.14]}
-        position={isMobile?  [0.2,-1.0,0] : [0.5, -1.2, -0.0]}
-        scale={isMobile? 0.2:  0.28}
+        position={ [0.5, -1.2, -0.0]}
+        scale= {  0.28}
       />
     </mesh>
   )

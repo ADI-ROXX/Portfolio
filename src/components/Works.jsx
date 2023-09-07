@@ -7,7 +7,7 @@ import { styles } from '../styles'
 import { WrapSection } from '../hoc'
 import { github } from '../assets'
 
-const WorkCard=({index,name,description,tags,image,source_code_link,website_url})=>{
+const WorkCard=({index,name,description,tags,notdisabled,image,source_code_link,website_url})=>{
 
   return(
 
@@ -30,9 +30,12 @@ const WorkCard=({index,name,description,tags,image,source_code_link,website_url}
           }
           className="flex flex-col relative  justify-center  items-center gap-4 px-2 "
           >
-          <div className=' rounded-[12px]  overflow-hidden cursor-pointer' onClick={()=>window.open(website_url,"_blank")}>
-            <img src={image} className="object-cover w-full h-full"/>
-          </div>
+          {notdisabled ? <div className=' rounded-[12px]  overflow-hidden ' >
+            <img src={image} className="object-fill w-[300px] h-[180px]"/>
+          </div> : <div className=' rounded-[12px]  overflow-hidden cursor-pointer' onClick={()=>window.open(website_url,"_blank")}>
+            <img src={image} className="object-fill w-[300px] h-[180px]"/>
+          </div>}
+
 
           <div className="absolute w-10 h-10 p-1 black-gradient right-5 top-4 justify-end rounded-full shadow-2xl	 ">
               <div className="flex w-full h-full items-center justify-center cursor-pointer "
@@ -42,7 +45,7 @@ const WorkCard=({index,name,description,tags,image,source_code_link,website_url}
           </div>
 
           <div>
-            <p>{name}</p>
+            <p className='font-semibold py-1'>{name}</p>
             <p>{description}</p>
           </div>
           </div>

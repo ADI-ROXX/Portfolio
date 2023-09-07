@@ -4,7 +4,7 @@ import Loader from '../Loader'
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
 
 const Ball = ({icon}) => {
-  const [decal]= useTexture([icon]);
+  const [decal]= useTexture([icon,icon]);
 
   return (
     <Float speed={5.5} rotationIntensity={2} floatIntensity={4} >
@@ -21,11 +21,11 @@ const Ball = ({icon}) => {
           flatShading/>
         <Decal 
           position={[0,0,1]}
-          rotation={[2*Math.PI, 0,0]}
+          rotation={[0, 0,0]}
           flaShading
           scale={1.2}
           map={decal}/>
-          </mesh>
+        </mesh>
     </Float>  
   )
 }
