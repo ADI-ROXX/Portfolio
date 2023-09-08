@@ -1,13 +1,15 @@
 import {Suspense,useEffect,useState} from 'react'
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls,Preload,useGLTF } from '@react-three/drei';
+import { OrbitControls,Preload,useGLTF,Float } from '@react-three/drei';
 import CanvasLoader from "../Loader"
 
 const Computers = () => {
   const computer = useGLTF("./gaming_pc/scene.gltf");
-  
+  const [x,setX]=useState(0);
+
 
   return (
+
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
 
@@ -32,13 +34,11 @@ const Computers = () => {
       intensity={0.4} 
       color="#EE82EE"
       position={[-10,10,20]} />
-      <primitive
-        object={computer.scene}
-        rotation={[0.0, 30, -0.14]}
-        position={ [0.5, -1.2, -0.0]}
-        scale= {  0.28}
+
+      <primitive object={computer.scene} rotation={[0.0, 30, -0.14]} position={ [0.5, -1.2, -0.0]} scale= {  0.28}
       />
     </mesh>
+
   )
 }
 const ComputersCanvas=()=>{

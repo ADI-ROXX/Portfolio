@@ -3,8 +3,7 @@ import {motion} from "framer-motion"
 
 import {styles} from "../styles.js"
 import {ComputersCanvas} from "./canvas/index.js"
-import { Link } from 'react-router-dom'
-import { useFrame } from '@react-three/fiber'
+
 const Home = () => {
   const setup=useRef();
 
@@ -22,8 +21,8 @@ const Home = () => {
  
         </div>
         <div className="flex flex-col gap-0">
-        <p className={`${styles.heroHeadText} steelfish `}>Hi, I'm <span className="back-img">Aditya</span></p>
-        <p className={`${styles.heroSubText} w-[60%]`}>I create attractive websites and have worked on both frontend and backend</p>
+        <p className={`${styles.heroHeadText} steelfish select-none	`}>Hi, I'm <span className="back-img">Aditya</span></p>
+        <p className={`${styles.heroSubText} w-[60%] select-none	`}>I create attractive websites and have worked on both frontend and backend</p>
         </div>
         </div>
         <div className="z-0 absolute  w-full h-screen ">

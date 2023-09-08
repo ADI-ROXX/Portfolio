@@ -1,8 +1,7 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+
+import coder from "./coder.png"
+import frontend from "./frontend.png"
+import backend from "./backend.png"
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -26,16 +25,15 @@ import threejs from "./tech/threejs.svg";
 
 
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import mindcanvas from "./mindcanvas.png";
+import worldwatcher from "./worldwatcher.png";
+import messier from "./messier.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
+
+coder,
+backend,
+  frontend,
   github,
   menu,
   close,
@@ -53,7 +51,7 @@ export {
   typescript,
   threejs,
 
-  carrent,
-  jobit,
-  tripguide,
+  mindcanvas,
+  worldwatcher,
+  messier,
 };

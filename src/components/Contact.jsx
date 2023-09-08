@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn,textVariant } from '../utils/motion'
 
-import "./contact.css";
+
 
 import {WrapSection} from "../hoc"
 import emailValidator from "email-validator";

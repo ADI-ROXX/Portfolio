@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     
-    <div  className={`${styles.paddingX} pl-1  py-[0.5vh] flex fixed top-0 left-0 flex-row z-20 justify-between items-center pt-[0.5vh] h-[10vh] w-full `}>
+    <div  className={`${styles.paddingX} pl-1 select-none	 py-[0.5vh] flex fixed top-0 left-0 flex-row z-20 justify-between items-center pt-[0.5vh] h-[10vh] w-full `}>
       <div className={` flex flex-row justify-start items-center  gap-2`}>
             <a href='#' className='cursor-pointer' onClick={()=>{
                       setPage('')

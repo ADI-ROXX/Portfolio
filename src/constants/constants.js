@@ -1,21 +1,19 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
+    coder,
+    frontend,
     javascript,
     typescript,
     html,
     css,
     reactjs,
-
+  backend,
     tailwind,
     nodejs,
     mongodb,
     git,
-    carrent,
-    jobit,
-    tripguide,
+    mindcanvas,
+    worldwatcher,
+    messier,
  
     threejs,
   } from "../assets";
@@ -41,21 +39,17 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Frontend Developer",
+      icon: frontend,
     },
     {
       title: "Coder",
-      icon: mobile,
+      icon: coder,
     },
     {
       title: "Backend Developer",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    }
     
   ];
   
@@ -113,21 +107,8 @@ import {
       website_url:"https://mindcanvas-nzy8.onrender.com/",
       description:
         "A blogging website that lets the users see the blogs related to various categories\nUsers can see posts related to Movies,Music,Technology,\nWeb-Series etc.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
+
+      image: mindcanvas,
       source_code_link: "https://github.com/ADI-ROXX/MindCanvas",
       notdisabled:false,
     },
@@ -137,21 +118,8 @@ import {
       website_url: "",
       description:
       "Web application that enables users to see the latest news in the world. Users can also search for news according to the keywords that they like.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
+      
+      image: worldwatcher,
       source_code_link: "https://github.com/ADI-ROXX/WorldWatcher",
     },
     {
@@ -160,23 +128,10 @@ import {
       website_url:"https://www.youtube.com/",
 
       description:
-        "This is a web scraping code that searches the internet for the coordinates of all the Messiers and orders the Messiers according to the best time of the year we can see them in.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+        "This is a web scraping code that searches the internet for the coordinates of all the Messiers and orders the Messiers according to the best time to see them.",
+     
+      image: messier,
+      source_code_link: "https://github.com/ADI-ROXX/Messier_Scraper",
     },
   ];
   

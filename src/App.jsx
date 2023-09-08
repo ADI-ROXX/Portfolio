@@ -2,7 +2,7 @@
 import { BrowserRouter } from "react-router-dom"
 
 import {About,Contact,Home,Tech,Works,Navbar} from "./components/"
-import "./contact.css"
+
 function App() {
 
   return (

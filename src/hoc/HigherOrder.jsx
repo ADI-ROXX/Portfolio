@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { staggerContainer } from '../utils/motion'
-import "./contact.css";
+
 //We are doing this because we want to wrap the different sections like Intro,Experience,Testimonials etc. into one so that we can have a single padding for all of them
 const WrapSection = (Component, idName) =>
   function HOC() {
